@@ -29,7 +29,7 @@
 /* header section styles  */
 .header {
     background: rgba(255, 144, 14, 0.1);
-    height: 700px;
+    height: 800px;
 }
 
 .menu-bar {
@@ -171,18 +171,51 @@ nav li {
     font-size: 30px;
 }
 
+/* activites section styles  */
+.our-activites{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
 
+.fatch-problem {
+    width: 40%;
+    text-align: left;
+    padding-top: 50px;
+}
+
+.fatch-title {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.activtie{
+    height: 150px;
+    width: 150px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.activtie img{
+    width: 30px;
+}
+.activtie h1{
+    font-size: 40px;
+}
 
 @media screen and (max-width:576px) {
-    .menu-bar {
-        display: none;
+    .menu-bar h1{
+        font-size: 20px;
     }
-
+    nav ul{
+        flex-direction: column;
+    }
     .container {
         width: 100%;
         overflow: hidden;
     }
-
+    
     .features-section {
         flex-direction: column;
     }
@@ -206,10 +239,24 @@ nav li {
 
     .experience-content {
         padding: 15px;
+        width: 100%;
     }
 
-    .experience-section-images img {
+    .experience-section-images{
         width: 100%;
         padding: 10px;
+    }
+    
+    .our-activites{
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px;
+    }
+    .fatch-problem{
+        width: 100%;
+        padding: 10px;
+    }
+    .activtie{
+        width: 100%;
     }
 }
