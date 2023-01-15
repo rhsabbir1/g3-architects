@@ -196,6 +196,10 @@ nav li {
     text-align: center;
     padding: 10px;
     border-radius: 10px;
+    transition: transform 1s;
+}
+.activtie:hover{
+    transform: scale(1.1);
 }
 .activtie img{
     width: 30px;
@@ -203,6 +207,30 @@ nav li {
 .activtie h1{
     font-size: 40px;
 }
+/* sponspore section styles  */
+.spospore-section{
+    padding: 50px 0;
+}
+.sponspore-content{
+    padding-top: 25px 0;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.sponspore-title{
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+.sponspore-logo{
+    display: flex;
+    justify-content: space-between;
+}
+.sponspore-logo img{
+    width: 80px;
+    padding: 50px 0;
+}
+
+
 
 @media screen and (max-width:576px) {
     .menu-bar h1{
@@ -258,5 +286,12 @@ nav li {
     }
     .activtie{
         width: 100%;
+    }
+    .sponspore-logo{
+        flex-direction: column;
+    }
+    .sponspore-logo img{
+        margin: 0 auto;
+        width: 40%;
     }
 }
