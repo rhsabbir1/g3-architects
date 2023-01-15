@@ -217,14 +217,14 @@ nav li {
     padding: 50px 0;
 }
 
-.sponspore-content {
+.sponspore-content, .services-section {
     padding-top: 25px 0;
     width: 60%;
     margin: 0 auto;
     text-align: center;
 }
 
-.sponspore-title {
+.sponspore-title,.services-title  {
     font-size: 45px;
     margin-bottom: 25px;
 }
@@ -239,6 +239,35 @@ nav li {
     padding: 50px 0;
     filter: grayscale(100%);
 }
+
+
+
+
+
+.team-services{
+    display: flex;
+    gap: 10px;
+}
+.service{
+    background-color: #f2a5a52c;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.service img{
+    width: 100%;
+    margin-bottom: 25px;
+}
+.service h2{
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+.service p{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+
 
 /* footer section styles  */
 .footer {
@@ -323,6 +352,13 @@ nav li {
     .sponspore-logo img {
         margin: 0 auto;
         width: 40%;
+    }
+
+    .team-services{
+        flex-direction: column;
+    }
+    .service{
+        padding: 10px;
     }
     .footer {
         height: 150px;
