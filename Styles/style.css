@@ -172,7 +172,7 @@ nav li {
 }
 
 /* activites section styles  */
-.our-activites{
+.our-activites {
     display: flex;
     justify-content: space-around;
     padding-top: 50px;
@@ -189,7 +189,8 @@ nav li {
     font-size: 30px;
     margin-bottom: 10px;
 }
-.activtie{
+
+.activtie {
     height: 150px;
     width: 150px;
     border: 1px solid #FF900E;
@@ -198,52 +199,77 @@ nav li {
     border-radius: 10px;
     transition: transform 1s;
 }
-.activtie:hover{
+
+.activtie:hover {
     transform: scale(1.1);
 }
-.activtie img{
+
+.activtie img {
     width: 30px;
 }
-.activtie h1{
+
+.activtie h1 {
     font-size: 40px;
 }
+
 /* sponspore section styles  */
-.spospore-section{
+.spospore-section {
     padding: 50px 0;
 }
-.sponspore-content{
+
+.sponspore-content {
     padding-top: 25px 0;
     width: 60%;
     margin: 0 auto;
     text-align: center;
 }
-.sponspore-title{
+
+.sponspore-title {
     font-size: 45px;
     margin-bottom: 25px;
 }
-.sponspore-logo{
+
+.sponspore-logo {
     display: flex;
     justify-content: space-between;
 }
-.sponspore-logo img{
+
+.sponspore-logo img {
     width: 80px;
     padding: 50px 0;
+    filter: grayscale(100%);
 }
 
+/* footer section styles  */
+.footer {
+    background: #FFF4E7;
+    border-radius: 8px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.footer p {
+    font-weight: 400;
+    font-size: 25px;
+}
 
 @media screen and (max-width:576px) {
-    .menu-bar h1{
+    .menu-bar h1 {
         font-size: 20px;
     }
-    nav ul{
+
+    nav ul {
         flex-direction: column;
     }
+
     .container {
         width: 100%;
         overflow: hidden;
     }
-    
+
     .features-section {
         flex-direction: column;
     }
@@ -270,28 +296,41 @@ nav li {
         width: 100%;
     }
 
-    .experience-section-images{
+    .experience-section-images {
         width: 100%;
         padding: 10px;
     }
-    
-    .our-activites{
+
+    .our-activites {
         flex-direction: column;
         gap: 20px;
         padding: 40px;
     }
-    .fatch-problem{
+
+    .fatch-problem {
         width: 100%;
         padding: 10px;
     }
-    .activtie{
+
+    .activtie {
         width: 100%;
     }
-    .sponspore-logo{
+
+    .sponspore-logo {
         flex-direction: column;
     }
-    .sponspore-logo img{
+
+    .sponspore-logo img {
         margin: 0 auto;
         width: 40%;
     }
+    .footer {
+        height: 150px;
+    }
+    
+    .footer p {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+    
 }
